@@ -11,6 +11,8 @@ jobs:
         run: npm install
       - name: Build project assests
         run: npm run build
+      - name: List directory contents
+        run: ls -la .next/
       - name: Upload Static site content
         uses: actions/upload-artifact@v4
         with:
